@@ -8,12 +8,11 @@ const ProductTag = require('./ProductTag');
 
 //Catergory / Product Joins
 Category.hasMany(Product, {
-  // foreignKey: 'id',
-  // onDelete: 'CASCADE',
+  foreignKey: 'id',
 });
 
 Product.belongsTo(Category, {
-  //foreignKey: 'id',
+  foreignKey: 'id',
 });
 
 
